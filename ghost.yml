@@ -67,13 +67,9 @@
     - name: Install mysql-server
       apt: name=mysql-server state=present
 
-    # Nodejs / yarn
+    # Nodejs
     - name: Install nodejs
       shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -; sudo apt-get install -y nodejs
-      tags: nodejs
-
-    - name: Install yarn
-      shell: npm install yarn -g
       tags: nodejs
 
     - name: Install ghost-cli

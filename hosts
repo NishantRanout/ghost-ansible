@@ -1,2 +1,2 @@
 [web]
-blog ansible_ssh_host=YOUR_SERVER_IP ansible_python_interpreter=/usr/bin/python3
+blog ansible_ssh_host=10.140.0.2 ansible_python_interpreter=/usr/bin/python3

@@ -46,23 +46,23 @@
       tags: nginx_config
 
     # Nginx SSL Certificate
-    - name: 'Upload SSL certificate'
-      copy:
-        src: 'files/server.crt'
-        dest: '/etc/ssl/certs/ssl.crt'
-        owner: root
-        group: root
-        mode: 0644
-      tags: nginx_config
+    #- name: 'Upload SSL certificate'
+     # copy:
+     #   src: 'files/server.crt'
+      #  dest: '/etc/ssl/certs/ssl.crt'
+      #  owner: root
+      #  group: root
+      #  mode: 0644
+      #tags: nginx_config
 
-    - name: 'Upload SSL certificate key'
-      copy:
-        src: 'files/server.key'
-        dest: '/etc/ssl/private/ssl.key'
-        owner: root
-        group: root
-        mode: 0640
-      tags: nginx_config
+    #- name: 'Upload SSL certificate key'
+      #copy:
+     #   src: 'files/server.key'
+      #  dest: '/etc/ssl/private/ssl.key'
+      #  owner: root
+      #  group: root
+      #  mode: 0640
+     # tags: nginx_config
 
     - name: Install mysql-server
       apt: name=mysql-server state=present
